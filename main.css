@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 300ms;
+}
+body {
+    margin: 0px;
+    background-color:  rgba(19, 18, 18, 0.705);
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #e00862;
+}
+.backdrop {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 11, 11, 0.3);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+/*TYPOGRAPHY
+**************************************/
+
+h1 {
+    font-size: 2em;
+    margin-bottom: .65em;
+}
+.portfolio-item p {
+    font-size: 2rem;
+}
+
+.first-title {
+    margin-top: .4em;
+    margin-bottom: .4em;
+    font-size: 6rem;
+}
+.first-title-text {
+    margin-bottom: 2em;
+    font-size: 2.8em;
+
+}
+.section-three-portfolio h1 {
+    font-size: 3rem;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+}
+@media  (max-width: 50rem) {
+    .first-title {
+        font-size: 4rem;
+        margin-top: .9em;
+    }
+   
+}
+@media  (max-width: 50rem) {
+    .first-title-text {
+        font-size: 1.8rem;
+    }   
+}
+/*BUTTONS
+**************************************/
+
+.button {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: .2rem;
+    color: #e00862;
+    background-color: black;
+    padding: 0 .5em;
+    margin-bottom: 2em;
+}
+
+.button:hover,
+.button:focus {
+    color: black;
+    background-color: #e00862;
+}
+@media  (max-width: 50rem) {
+    .button-portfolio {
+        font-size: 1.1rem;
+    }
+}
+.modalbtn {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: .2rem;
+    color: #e00862;
+    border-color: #e00862;
+    background-color: black;
+    padding: 0 .5em;
+    margin-bottom: .6em;
+}
+.modalbtn:hover,
+.modalbtn:focus {
+    color: black;
+    background-color: #e00862;
+    border-color: black;
+    cursor: pointer;
+}
+
+.toggle-button {
+    width: 3rem;
+    position: absolute;
+    border-radius: 1em;
+    left: .4em;
+    top: .4em;
+    background: rgba(51, 50, 50, 0.123);
+    border: #e00862 solid 1px;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  
+@media (min-width: 40rem) {
+    .toggle-button {
+    display: none;
+    }
+}
+.toggle-button:focus {
+    outline: none;
+  }
+  
+.toggle-button__bar {
+    width: 100%;
+    height: 0.3rem;
+    background: #e00862;
+    display: block;
+    margin: 0.4rem 0;
+  }
+/*HEADER
+**************************************/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+nav ul {
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    background-color: #030303c5;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+    margin: .4em;
+}
+
+
+nav a {
+   text-decoration: none;
+   font-size: 1.1rem;
+   text-transform: uppercase;
+   color: #f53585;
+   padding: .3em;
+}
+@media (max-width: 40rem) {
+    .active {
+        display: none;
+    }
+}
+
+nav a:hover,
+nav a:focus {
+    color: hsl(335, 85%, 79%);
+
+}
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    height: 100vh;
+    margin: 0;
+  }
+  
+.mobile-nav__items {
+    width: 9em;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+.mobile-nav__item {
+    margin: 1rem 0;
+  }
+  
+.mobile-nav__item a {
+    font-size: 1.4rem;
+  }
+
+/*ONE
+**************************************/
+
+.one {
+    background-image: url(../BIRXXX/images/bg.jpg);
+    padding: 6em 0 13em 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*WHOIAM
+**************************************/
+
+.whoiam-text {
+    font-size: 1.2rem;
+    background-color: #232323;
+    padding: 3em;
+    outline: 2px solid #f53585;
+    outline-offset: -2.5em;
+    position: relative;
+}
+.whoiam-text h1 {
+    position: absolute;
+    margin: 0px;
+    top: .7em;
+    left: 50%;
+    font-size: 1.8rem;
+    transform: translateX(-50%);
+    background-color: #232323;
+    padding: 0 .2em;
+}
+@media  (min-width: 25rem) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .whoiam-text h1 {
+        top: .6em;
+    }
+}
+@media (min-width: 60rem)  {
+    h1 {
+        font-size: 1.2rem;
+    }
+    .whoiam {
+        background-image: 
+        url(../BIRXXX/images/section-first.jpg);
+        padding: 2em;
+        padding-bottom: 10em;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        margin: 5em;
+    }
+    .whoiam-text {
+       width: 55%;
+       top: -10em;
+       left: -5em;
+       box-shadow: 0 0 3em 0 rgb(0,0,0, .45);
+    }
+}
+/*PORTFOLIO******************************'
+***********/
+.portfolio-item {
+    position: relative;
+    margin: 0;
+
+}
+.port-item-desc {
+    position: absolute;
+    height: 12em;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #03030379;
+}
+.port-item-desc h1 {
+    font-size: 1.8rem;
+}
+
+@media (min-width: 40rem) {
+    .portfolio-item {
+        width: 50%;
+        float: left;
+        overflow: hidden;
+    }
+    .port-item-desc h1 {
+        font-size: 2rem;
+    }
+
+    .button{
+        font-size: 1.2rem;
+    }
+    .port-item-desc {
+        transform: translateY(150%);
+    }
+    .portfolio-item:hover .port-item-desc {
+        transform: translateY(0%);
+    }
+}
+@media (min-width: 60rem) {
+    .portfolio-item {
+        width: 33.333334%;
+        overflow: hidden;
+    }
+    .port-item-desc {
+        transform: translateY(150%);
+    }
+    .portfolio-item:hover .port-item-desc {
+        transform: translateY(0%);
+    }
+}
+.over18 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.over18 p {
+    margin: 1em;
+}
+
+/*FOOTER******************************'
+***********/
+
+footer {
+    background-color: #030303;
+    list-style: none;   
+}
+
+footer li {
+    display: inline-block;
+    margin: 1em;
+}
+.links {   
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: hsl(336, 24%, 96%);
+    padding: .4 .8em;
+}
+.links:hover,
+.links:focus {
+    color: #e00862;
+}
+/*MODAL******************************'
+***********/
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 1100;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    background-color: #030303d5;
+    padding: 1rem;
+    border: 1px solid #f53585;
+    border-radius: 1em;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+  }
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  .modal__actions {
+    text-align: center;
+  } 
+  .modal__action {
+    border: 2px solid #e00862;
+    background: #232323;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .modal__action:hover,
+  .modal__action:active {
+  background: #2ddf5c;
+}
+  .modal__action--negative {
+    background: #e00862;
+  }
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background:hsl(335, 85%, 79%);
+  }
