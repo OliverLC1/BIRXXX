@@ -256,7 +256,7 @@ nav a:focus {
     }
     .whoiam {
         background-image: 
-        url(../BIRXXX/images/section-first.jpg);
+        url(../BIRXXX/images/Kitchen\ 1.jpg);
         padding: 2em;
         padding-bottom: 10em;
         background-repeat: no-repeat;
@@ -266,7 +266,7 @@ nav a:focus {
     }
     .whoiam-text {
        width: 55%;
-       top: -10em;
+       top: -12em;
        left: -5em;
        box-shadow: 0 0 3em 0 rgb(0,0,0, .45);
     }
@@ -369,14 +369,14 @@ footer li {
     border-radius: 1em;
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
   }
-  .modal__title {
+.modal__title {
     text-align: center;
     margin: 0 0 1rem 0;
   }
-  .modal__actions {
+.modal__actions {
     text-align: center;
   } 
-  .modal__action {
+.modal__action {
     border: 2px solid #e00862;
     background: #232323;
     border-radius: 1rem;
@@ -386,14 +386,14 @@ footer li {
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
-  .modal__action:hover,
-  .modal__action:active {
+.modal__action:hover,
+.modal__action:active {
   background: #2ddf5c;
 }
-  .modal__action--negative {
+.modal__action--negative {
     background: #e00862;
   }
-  .modal__action--negative:hover,
-  .modal__action--negative:active {
+.modal__action--negative:hover,
+.modal__action--negative:active {
     background:hsl(335, 85%, 79%);
   }
