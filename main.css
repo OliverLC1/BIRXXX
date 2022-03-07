@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 250ms;
+}
+html{
+    margin: 0;
 }
 body {
     margin: 0px;
@@ -26,18 +29,8 @@ img {
     max-width: 70em;
     margin: 0 auto;
 }
-
 /*TYPOGRAPHY
 **************************************/
-
-h1 {
-    font-size: 2em;
-    margin-bottom: .65em;
-}
-.portfolio-item p {
-    font-size: 2rem;
-}
-
 .first-title {
     margin-top: .4em;
     margin-bottom: .4em;
@@ -46,19 +39,16 @@ h1 {
 .first-title-text {
     margin-bottom: 2em;
     font-size: 2.8em;
-
 }
-.section-three-portfolio h1 {
-    font-size: 3rem;
-    margin-top: 0em;
-    margin-bottom: 1.5em;
+.portfolio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
 }
 @media  (max-width: 50rem) {
     .first-title {
         font-size: 4rem;
         margin-top: .9em;
-    }
-   
+    }   
 }
 @media  (max-width: 50rem) {
     .first-title-text {
@@ -67,8 +57,7 @@ h1 {
 }
 /*BUTTONS
 **************************************/
-
-.button {
+.button-portfolio {
     display: inline-block;
     font-size: 1.4rem;
     text-decoration: none;
@@ -80,17 +69,32 @@ h1 {
     background-color: black;
     padding: 0 .5em;
     margin-bottom: 2em;
+    bottom: 5em;
 }
-
-.button:hover,
-.button:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
     color: black;
     background-color: #e00862;
 }
-@media  (max-width: 50rem) {
-    .button-portfolio {
-        font-size: 1.1rem;
-    }
+.button-image {
+     position: absolute;
+     font-size: 1.4rem;
+     text-decoration: none;
+     text-transform: uppercase;
+     border-width: 3px;
+     border-style: solid;
+     border-radius: .2rem;
+     color: #e00862;
+     background-color: black;
+     padding: 0 .5em;
+     bottom: .5em;
+     left: 35%;
+     right: 35%;
+ }
+.button-image:hover,
+.button-image:focus {
+    color: black;
+    background-color: #e00862;
 }
 .modalbtn {
     display: inline-block;
@@ -113,7 +117,6 @@ h1 {
     border-color: black;
     cursor: pointer;
 }
-
 .toggle-button {
     width: 3rem;
     position: absolute;
@@ -127,7 +130,6 @@ h1 {
     padding-bottom: 0;
     vertical-align: middle;
   }
-  
 @media (min-width: 40rem) {
     .toggle-button {
     display: none;
@@ -146,13 +148,11 @@ h1 {
   }
 /*HEADER
 **************************************/
-
 header {
     position: fixed;
     width: 100%;
     z-index: 200;
 }
-
 nav ul {
     text-align: right;
     margin: 0px;
@@ -160,13 +160,10 @@ nav ul {
     background-color: #030303c5;
     position: relative;
 }
-
 nav li {
     display: inline-block;
     margin: .4em;
 }
-
-
 nav a {
    text-decoration: none;
    font-size: 1.1rem;
@@ -179,7 +176,6 @@ nav a {
         display: none;
     }
 }
-
 nav a:hover,
 nav a:focus {
     color: hsl(335, 85%, 79%);
@@ -192,8 +188,7 @@ nav a:focus {
     left: 0;
     height: 100vh;
     margin: 0;
-  }
-  
+  } 
 .mobile-nav__items {
     width: 9em;
     height: 100%;
@@ -210,10 +205,8 @@ nav a:focus {
 .mobile-nav__item a {
     font-size: 1.4rem;
   }
-
 /*ONE
 **************************************/
-
 .one {
     background-image: url(../BIRXXX/images/bg.jpg);
     padding: 6em 0 13em 0;
@@ -223,32 +216,23 @@ nav a:focus {
 }
 /*WHOIAM
 **************************************/
-
 .whoiam-text {
     font-size: 1.2rem;
     background-color: #232323;
     padding: 3em;
     outline: 2px solid #f53585;
-    outline-offset: -2.5em;
+    outline-offset: -2.3em;
     position: relative;
 }
 .whoiam-text h1 {
     position: absolute;
     margin: 0px;
-    top: .7em;
+    top: .6em;
     left: 50%;
     font-size: 1.8rem;
     transform: translateX(-50%);
     background-color: #232323;
-    padding: 0 .2em;
-}
-@media  (min-width: 25rem) {
-    h1 {
-        font-size: 1.2rem;
-    }
-    .whoiam-text h1 {
-        top: .6em;
-    }
+    padding: 0 .3em;
 }
 @media (min-width: 60rem)  {
     h1 {
@@ -269,76 +253,67 @@ nav a:focus {
        top: -12em;
        left: -5em;
        box-shadow: 0 0 3em 0 rgb(0,0,0, .45);
-    }
+    }}
+.someofmywork {
+    font-size: 3em;
 }
+
+@media (max-width: 40rem) {
+    .someofmywork {
+        font-size: 2em;
+    }}
+
 /*PORTFOLIO******************************'
 ***********/
-.portfolio-item {
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.portfolio-image {
     position: relative;
     margin: 0;
-
+    overflow: hidden;
 }
-.port-item-desc {
+.porfolio-image__title {
     position: absolute;
-    height: 12em;
-    z-index: 100;
-    bottom: 0;
+    background-color: #03030379;
     left: 0;
     right: 0;
-    background: #03030379;
+    bottom: 0;
+    height: 10em;
+    margin: 0;    
 }
-.port-item-desc h1 {
-    font-size: 1.8rem;
+.porfolio-image__title {
+    transform: translateY(150%);
 }
-
-@media (min-width: 40rem) {
-    .portfolio-item {
-        width: 50%;
-        float: left;
-        overflow: hidden;
-    }
-    .port-item-desc h1 {
-        font-size: 2rem;
-    }
-
-    .button{
-        font-size: 1.2rem;
-    }
-    .port-item-desc {
-        transform: translateY(150%);
-    }
-    .portfolio-item:hover .port-item-desc {
-        transform: translateY(0%);
-    }
+.portfolio-image:hover .porfolio-image__title {
+    transform: translateY(0%);
 }
-@media (min-width: 60rem) {
-    .portfolio-item {
-        width: 33.333334%;
-        overflow: hidden;
-    }
-    .port-item-desc {
-        transform: translateY(150%);
-    }
-    .portfolio-item:hover .port-item-desc {
-        transform: translateY(0%);
-    }
+.button-image {
+    transform: translateY(150%);
 }
-.over18 {
-    font-size: 2rem;
-    margin-bottom: 0;
+.portfolio-image:hover .button-image {
+    transform: translateY(0%);
 }
-.over18 p {
-    margin: 1em;
+@media (max-width: 60rem) {
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-
+}
+@media (max-width: 40rem) {
+.portfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+ }
+}
 /*FOOTER******************************'
 ***********/
-
 footer {
+    margin-bottom: 0;
     background-color: #030303;
     list-style: none;   
 }
-
 footer li {
     display: inline-block;
     margin: 1em;

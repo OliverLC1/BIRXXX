@@ -1,20 +1,23 @@
-var backdrop = document.querySelector(".backdrop");
-var modalBtn = document.querySelector(".modalbtn");
-var modal = document.querySelector(".modal");
-var modalAction =document.querySelector(".modal__action");
-var modalActionNegative = document.querySelector(".modal__action--negative");
-var toggleButton = document.querySelector('.toggle-button');
-var mobileNav = document.querySelector('.mobile-nav');
+let backdrop = document.querySelector(".backdrop");
+let modal = document.querySelector(".modal");
+let modalAction =document.querySelector(".modal__action");
+let modalBtn = document.querySelector(".modalbtn");
+let modalActionNegative = document.querySelector(".modal__action--negative");
+let toggleButton = document.querySelector('.toggle-button');
+let mobileNav = document.querySelector('.mobile-nav');
 
 
 toggleButton.addEventListener('click', function() {
     mobileNav.style.display = 'block';
     backdrop.style.display = 'block';
+    toggleButton.style.display = 'none';
 
 });
 backdrop.addEventListener("click", function() {
     mobileNav.style.display = 'none';
     backdrop.style.display = 'none';
+    toggleButton.style.display = 'block';
+   
 
 });
 modalBtn.addEventListener("click", function() {
