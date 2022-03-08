@@ -178,7 +178,6 @@ nav a {
 nav a:hover,
 nav a:focus {
     color: hsl(335, 85%, 79%);
-
 }
 .mobile-nav {
     display: none;
@@ -261,7 +260,6 @@ nav a:focus {
         top: -5em;
     }
 }
-
 .someofmywork {
     font-size: 3em;
 }
@@ -398,8 +396,7 @@ nav a:focus {
     padding: 0 1.5em;
 }
 .form {
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);  
 }
  #message {
      margin-top: .5em;
@@ -411,10 +408,7 @@ nav a:focus {
     font-size: 1.2rem;
     padding: .5em;
     margin-bottom: .3em;
-    
-
 }
-
 .form-element {
     font-size: 1.2rem;
     padding: .3em;
@@ -423,19 +417,20 @@ nav a:focus {
     outline: none;
     border: none;
     border-radius: .2em;
-    background-color: #ec9bbd;
-    
+    background-color: #ec9bbd;  
 }
 textarea {
     resize: none;
     min-height: 5em;
 }
 .submit-group {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
     color: #e00862;
     background-color: black;
     border: .2em solid #e00862;
     border-radius: .3em;
-    padding: .5em 1.2em;
+    padding: .2em .5em;
     margin-left: 1.4em;
     cursor: pointer; 
 }
@@ -445,7 +440,6 @@ textarea {
     background-color: #e00862;
     border-color: black;
 }
-
 /*FOOTER******************************'
 ***********/
 footer {
