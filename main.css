@@ -1,4 +1,4 @@
-* {
+*   {
     box-sizing: border-box;
     transition: all ease-in-out 250ms;
 }
@@ -90,7 +90,7 @@ img {
      bottom: .5em;
      left: 35%;
      right: 35%;
- }
+}
 .button-image:hover,
 .button-image:focus {
     color: black;
@@ -129,7 +129,7 @@ img {
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
-  }
+}
 @media (min-width: 40rem) {
     .toggle-button {
     display: none;
@@ -137,15 +137,14 @@ img {
 }
 .toggle-button:focus {
     outline: none;
-  }
-  
+}
 .toggle-button__bar {
     width: 100%;
     height: 0.3rem;
     background: #e00862;
     display: block;
     margin: 0.4rem 0;
-  }
+}
 /*HEADER
 **************************************/
 header {
@@ -188,7 +187,7 @@ nav a:focus {
     left: 0;
     height: 100vh;
     margin: 0;
-  } 
+} 
 .mobile-nav__items {
     width: 9em;
     height: 100%;
@@ -196,15 +195,14 @@ nav a:focus {
     margin: 0;
     padding: 0;
     text-align: left;
-  }
-  
+}
 .mobile-nav__item {
     margin: 1rem 0;
-  }
+}
   
 .mobile-nav__item a {
     font-size: 1.4rem;
-  }
+}
 /*ONE
 **************************************/
 .one {
@@ -249,20 +247,85 @@ nav a:focus {
         margin: 5em;
     }
     .whoiam-text {
-       width: 55%;
+       width: 65%;
        top: -12em;
        left: -5em;
        box-shadow: 0 0 3em 0 rgb(0,0,0, .45);
-    }}
+    }
+}
+@media (max-width: 40rem){
+    .whoiam-text {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        top: -5em;
+    }
+}
+
 .someofmywork {
     font-size: 3em;
 }
-
 @media (max-width: 40rem) {
     .someofmywork {
         font-size: 2em;
-    }}
-
+        padding-top: 3.6em;
+    }
+}
+/*ABOUTME
+**************************************/
+.aboutme-container {
+    position: relative;
+    background-image: url(..//BIRXXX/images/aboutme.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+}
+.aboutme-title {
+    padding-top: 1.2em;
+    font-size: 3.5em;
+    margin: 0px;
+    max-height: 3em;
+}
+.aboutme {
+    position: absolute;
+    width: 55%;
+    min-width: 30em;
+    left: 2em;
+    bottom: -2.5em;
+    font-size: 1.2rem;
+    background-color: #232323;
+    padding: 2.2em;
+    outline: 2px solid #f53585;
+    outline-offset: -1.6em;       
+}
+@media (max-width: 40rem) {
+    .aboutme {
+        width: 80%;
+        min-width: 10em;
+        font-size: 1.2rem;
+        left: 10%; 
+        right: 10%;
+        bottom: -3.5em;
+        outline-offset: -1.7em;        
+    }
+}
+@media (max-width: 40rem) {
+    .aboutme-title {
+        font-size: 2em;
+        margin-top: 0px;
+        padding-top: .2em;
+    }
+}
+@media (max-width: 40rem){
+    .aboutme-container {
+        top: 1em;
+        padding-top: 0px;
+        margin-top: 0;
+        background-position: top;
+        height: 80%; 
+    }
+}
 /*PORTFOLIO******************************'
 ***********/
 .portfolio {
@@ -299,20 +362,21 @@ nav a:focus {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
+    }
 }
 @media (max-width: 40rem) {
 .portfolio {
-        display: grid;
-        grid-template-columns: 1fr;
- }
+    display: grid;
+    grid-template-columns: 1fr;
+    }
 }
 /*FOOTER******************************'
 ***********/
 footer {
     margin-bottom: 0;
+    margin-top: 2em;
     background-color: #030303;
-    list-style: none;   
+    list-style: none;  
 }
 footer li {
     display: inline-block;
@@ -343,14 +407,14 @@ footer li {
     border: 1px solid #f53585;
     border-radius: 1em;
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
-  }
+}
 .modal__title {
     text-align: center;
     margin: 0 0 1rem 0;
-  }
+}
 .modal__actions {
     text-align: center;
-  } 
+} 
 .modal__action {
     border: 2px solid #e00862;
     background: #232323;
@@ -360,15 +424,15 @@ footer li {
     font: inherit;
     padding: 0.5rem 1rem;
     cursor: pointer;
-  }
+}
 .modal__action:hover,
 .modal__action:active {
   background: #2ddf5c;
 }
 .modal__action--negative {
     background: #e00862;
-  }
+}
 .modal__action--negative:hover,
 .modal__action--negative:active {
     background:hsl(335, 85%, 79%);
-  }
+}
