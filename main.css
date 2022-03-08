@@ -370,11 +370,86 @@ nav a:focus {
     grid-template-columns: 1fr;
     }
 }
+/*CONTACT
+**************************************/
+.contact {
+    text-align: left;
+    min-height: 100vh;
+    padding-top: 7em;
+    background-image: linear-gradient(185deg, #03030379 70%, #f53585 30%, #2e0214);
+}
+.container-contact {
+    background-color: rgba(0, 0, 0, 0.568);
+    margin: 0 auto;
+    border: solid 3px #e00862;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 40em;
+    padding-left: 1em;
+}
+.container-contact h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+.container-contact p {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 0 1.5em;
+}
+.form {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    
+}
+ #message {
+     margin-top: .5em;
+     padding: .2em;
+     width: 90%;
+ }
+.form-group {
+    align-content: center;
+    font-size: 1.2rem;
+    padding: .5em;
+    margin-bottom: .3em;
+    
+
+}
+
+.form-element {
+    font-size: 1.2rem;
+    padding: .3em;
+    margin-left: .5em;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-radius: .2em;
+    background-color: #ec9bbd;
+    
+}
+textarea {
+    resize: none;
+    min-height: 5em;
+}
+.submit-group {
+    color: #e00862;
+    background-color: black;
+    border: .2em solid #e00862;
+    border-radius: .3em;
+    padding: .5em 1.2em;
+    margin-left: 1.4em;
+    cursor: pointer; 
+}
+.submit-group:hover,
+.submit-group:focus {
+    color: black;
+    background-color: #e00862;
+    border-color: black;
+}
+
 /*FOOTER******************************'
 ***********/
 footer {
     margin-bottom: 0;
-    margin-top: 2em;
     background-color: #030303;
     list-style: none;  
 }

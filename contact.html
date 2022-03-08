@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BIRXXX</title>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <header>
+        <nav>
+            <ul class="primari-navigation" class="primary-navigation flex">
+                <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                </button>
+                <li class="active"><a href="index.html"><span aria-hidden="true">Home</span></a></li>
+                <li class="active"><a href="aboutme.html"><span aria-hidden="true">About</span></a></li>
+                <li class="active"><a href="contact.html"><span aria-hidden="true">Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item"><a href="index.html">Home</a></li>
+            <li class="mobile-nav__item mobile-nav__item--cta"><a href="aboutme.html">About</a></li>
+            <li class="mobile-nav__item mobile-nav__item--cta"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="contact">
+        <div class="container-contact">
+            <h1>Send Message</h1>
+            <p>Write to me if you have any interesting modeling or promotion offers</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required class="form-element">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" name="email"id="email" required class="form-element">
+                </div>
+                <div class="form-group">
+                    <label for="message"> Message </label>
+                    <textarea name="message" id="message" class="form-element" ></textarea>
+                </div>
+                <div>
+                    <input class="submit-group" type="submit" value="SEND">
+                </div>               
+            </form>
+        </div>   
+    </div> 
+    <footer>
+        <li class="footer-link"><a class="links"  href="https://www.instagram.com/pinkbearbirgit/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="footer-link"><a class="links" href="https://www.facebook.com/birgit.birx/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
+        <li class="footer-link"><a class="links" href="https://twitter.com/home" target="_blank" ><i class="fa-brands fa-twitter"></i></a></li>
+    </footer>
+    <div class="modal">
+        <h1 class="modal__title">Are you over 18?</h1>
+        <div class="modal__actions">
+            <a href="https://onlyfans.com/pinkbearbirgit" target="_blank" class="modal__action">Yes!</a>
+            <button class="modal__action modal__action--negative" type="button">No!</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
